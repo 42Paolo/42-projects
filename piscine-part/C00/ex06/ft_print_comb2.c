@@ -6,7 +6,7 @@
 /*   By: pbrogi <pbrogi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 00:49:25 by pbrogi            #+#    #+#             */
-/*   Updated: 2025/07/30 23:07:26 by pbrogi           ###   ########.fr       */
+/*   Updated: 2025/08/10 01:29:57 by pbrogi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,9 @@ void    ft_print_comb2()
 			{
 				while(u_1 != 10)
 				{
-					if(1)
+					int num1 = d_2 * 10 + u_2;
+					int num2 = d_1 * 10 + u_1;
+					if(num1 < num2)
 					{
 						ft_print_num(d_2);
 						ft_print_num(u_2);
@@ -44,8 +46,8 @@ void    ft_print_comb2()
 						ft_print_num(d_1);
 						ft_print_num(u_1);
 						write(1, ", ", 2);
-						u_1++;
 					}
+					u_1++;
 				}
 				
 				u_1 = 0;
@@ -59,11 +61,4 @@ void    ft_print_comb2()
 		d_2++;
 	}
 	write(1, "\n", 1);
-}
-
-int main(void)
-{
-	ft_print_comb2();
-
-	return (0);
 }
