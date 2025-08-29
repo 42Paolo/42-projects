@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pbrogi <pbrogi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/28 23:48:39 by pbrogi            #+#    #+#             */
-/*   Updated: 2025/07/28 23:52:03 by pbrogi           ###   ########.fr       */
+/*   Created: 2025/08/29 16:44:22 by pbrogi            #+#    #+#             */
+/*   Updated: 2025/08/29 16:53:56 by pbrogi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,12 @@
 
 void	ft_print_reverse_alphabet(void)
 {
-	char	c;
+	char	x;
 
-	c = 'z';
-	while (c != 'a')
+	x = 'z';
+	while (x != 'a' - 1)
 	{
-		write(1, &c, 1);
-		c--;
+		write(1, &x, 1);
+		x--;
 	}
-	write(1, &c, 1);
 }
